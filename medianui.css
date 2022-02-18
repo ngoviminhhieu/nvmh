@@ -684,3 +684,116 @@ footer .toTop:before{content:'Top'}
 }
 /** Custom Csss **/
 strong { font-size: 16px; letter-spacing: 2px; padding: 0 5px; background: linear-gradient( to bottom, transparent 0%, #fce041 0% ); }
+/* syntax highlighter */
+.post pre{font-family:var(--font-code); font-size:.8rem;position:relative;width:100%;background-color:#f6f6f6;border-radius:2px;margin:25px auto;-moz-tab-size:2;-o-tab-size:2;tab-size:2;word-break:normal;user-select:text;-webkit-user-select:text;-khtml-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}
+.post pre code{color:#2f3337;display:block;padding:20px;white-space:pre;font-family:var(--font-code);font-size:16px;overflow-x:auto;line-height:1.5em}
+.darkMode .post pre{background: #232323;}
+.darkMode .post pre code{color:#fefefe;}
+
+/*.hljs,.hljs-subst,.hljs-tag{color:#eaebec}
+.hljs-emphasis,.hljs-strong{color:#a8a8a2}
+.hljs-bullet,.hljs-link,.hljs-literal,.hljs-number,.hljs-quote,.hljs-regexp{color:#ae81ff}
+.hljs-code,.hljs-section,.hljs-selector-class,.hljs-title{color:#a6e22e}
+.hljs-strong{font-weight:700}
+.hljs-emphasis{font-style:italic}
+.hljs-attr,.hljs-keyword,.hljs-name,.hljs-selector-tag{color:#f15a5a}
+.hljs-attribute,.hljs-symbol{color:#66d9ef}
+.hljs-class .hljs-title,.hljs-params{color:#f8f8f2}
+.hljs-addition,.hljs-built_in,.hljs-builtin-name,.hljs-selector-attr,.hljs-selector-id,.hljs-selector-pseudo,.hljs-string,.hljs-template-variable,.hljs-type,.hljs-variable{color:#e6db74}
+.hljs-comment,.hljs-deletion,.hljs-meta{color:#75715e}*/
+.code-badge-copy-icon{background:url(&quot;data:image/svg+xml,%3Csvg viewBox=&#39;0 0 512 512&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M391.89,450H163a50.17,50.17,0,0,1-50.11-50.11V98.11A50.17,50.17,0,0,1,163,48h150.1a15,15,0,0,1,10.61,4.39L437.61,166.27A15,15,0,0,1,442,176.88v223A50.17,50.17,0,0,1,391.89,450ZM163,78a20.13,20.13,0,0,0-20.11,20.11V399.89A20.13,20.13,0,0,0,163,420H391.89A20.13,20.13,0,0,0,412,399.89V183.09L306.91,78Z&#39; fill=&#39;%23c6c9ce&#39;/%3E%3Cpath d=&#39;M427,191.88H348.23a50.17,50.17,0,0,1-50.11-50.11V63a15,15,0,0,1,30,0v78.77a20.13,20.13,0,0,0,20.11,20.11H427a15,15,0,0,1,0,30Z&#39; fill=&#39;%23c6c9ce&#39;/%3E%3C/svg%3E&quot;);background-size:55% 55%;background-repeat:no-repeat;background-position:center;cursor:pointer;padding:7px 15px;margin:-5px -8px -5px -14px}
+.code-badge &gt; .code-badge-check-icon{background:green}
+.code-badge-check-icon{cursor:pointer;padding:0 7px;margin:-5px 0 -5px -5px;background:url(&#39;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIiBkYXRhLXByZWZpeD0iZmFzIiBkYXRhLWljb249ImNoZWNrIiBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtY2hlY2sgZmEtdy0xNiIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9IiYjMTA7ICAgIGNvbG9yOiAjMmFmZjMyOyYjMTA7Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNzMuODk4IDQzOS40MDRsLTE2Ni40LTE2Ni40Yy05Ljk5Ny05Ljk5Ny05Ljk5Ny0yNi4yMDYgMC0zNi4yMDRsMzYuMjAzLTM2LjIwNGM5Ljk5Ny05Ljk5OCAyNi4yMDctOS45OTggMzYuMjA0IDBMMTkyIDMxMi42OSA0MzIuMDk1IDcyLjU5NmM5Ljk5Ny05Ljk5NyAyNi4yMDctOS45OTcgMzYuMjA0IDBsMzYuMjAzIDM2LjIwNGM5Ljk5NyA5Ljk5NyA5Ljk5NyAyNi4yMDYgMCAzNi4yMDRsLTI5NC40IDI5NC40MDFjLTkuOTk4IDkuOTk3LTI2LjIwNyA5Ljk5Ny0zNi4yMDQtLjAwMXoiLz48L3N2Zz4=&#39;);background-size:100% 100%}
+#copyy i.code-badge-copy-icon:before{content:&#39;Copy Code&#39;;font-style:normal;position:absolute;display:block;top:-20px;width:max-content;background:var(--link-color);color:#fff;border-radius:3px;right:0;padding:2px 6px;visibility:hidden;opacity:0;transition:all .2s ease}
+#copyy:hover i.code-badge-copy-icon::before{visibility:visible;opacity:1;top:-33px}
+#copyy i.code-badge-copy-icon:after{content:&#39;&#39;;position:absolute;top:0;right:13px;border-left:solid transparent 4px;border-right:solid transparent 4px;border-top:solid var(--link-color) 4px;opacity:0;visibility:hidden;transition:all .2s ease}
+#copyy:hover i.code-badge-copy-icon::after{visibility:visible;opacity:1;top:-9.8px}
+#copyy  i.code-badge-check-icon:before{content:&#39;Code Copied!&#39;;font-style:normal;position:absolute;display:block;top:-33px;width:max-content;background:rgba(236, 13, 252,.90);color:#fff;border-radius:3px;right:0;padding:2px 6px;transition:all .2s ease}
+#copyy i.code-badge-check-icon:after{content:&#39;&#39;;position:absolute;top:-9.8px;right:13px;border-left:solid transparent 4px;border-right:solid transparent 4px;border-top:solid rgba(236, 13, 252,.90) 4px;transition:all .2s ease}
+.post .code{display:inline;padding:2px 4px;font-size:85%;line-height:inherit;color:var(--highlight-color);background-color:rgba(0,0,0,.05);font-family:var(--font-code)} 
+.darkMode .post .code{color:var(--dark-textAlt);background-color:rgba(255,255,255,.1)}
+/* Font Body */
+@font-face{font-family: 'Noto Sans';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARMQ_m87A.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4DRG.woff) format('woff')}
+@font-face{font-family: 'Noto Sans';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyDzW0.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZtyH.woff) format('woff')}
+@font-face{font-family: 'Noto Sans';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNb4Q.woff) format('woff')}
+@font-face{font-family: 'Noto Sans';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVZNyB.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFlYA.woff) format('woff')}
+/* Font Heading */
+@font-face {font-family: 'Poppins';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v13/pxiByp8kv8JHgFVrLCz7V1g.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v13/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2')}
+@font-face {font-family: 'Poppins';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmy15lEw.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmy15VF9eO.woff2) format('woff2')}
+@font-face {font-family: 'Poppins';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1g.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2')}
+@font-face {font-family: 'Poppins';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19lEw.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19VF9eO.woff2) format('woff2')}
+/* Source Code Font */
+@font-face {font-family: 'Fira Mono';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtQIg.woff) format('woff'), url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgJv7S.woff2) format('woff2')}
+
+/* PT Sans */
+@font-face{font-family:'PT Sans';
+font-style:normal;font-weight:400;font-display:swap;
+src:url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0KExcOPIDU.woff2)format('woff2');}
+
+@font-face{font-family:'PT Sans';
+font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0O6tLR8a8zI.woff2)format('woff2');}
+
+/* Standar CSS */
+*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box} h1, h2, h3, h4, h5, h6{margin:0;font-weight:700;font-family:var(--font-head);color:var(--head-color)} h1{font-size:1.8rem} h2{font-size:1.7rem} h3{font-size:1.5rem} h4{font-size:1.3rem} h5{font-size:1.2rem} h6{font-size:1.1rem} a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:opacity .15s} table{border-spacing:0} iframe{max-width:100%;border:0;margin-left:auto;margin-right:auto} input, button, select, textarea{font:inherit;font-size:100%;color:inherit;line-height:normal;vertical-align:baseline} img{display:block;position:relative;max-width:100%;height:auto} svg{width:22px;height:22px;fill:var(--icon-color)} svg.line, svg .line{fill:none!important;stroke:var(--icon-color);stroke-linecap:round;stroke-linejoin:round;stroke-width:1} svg.c-1, svg .c-1{fill:var(--icon-alt)} svg.c-2, svg .c-2{fill:var(--icon-sec); opacity:.4} .hidden, .replaced{display:none} .invisible{visibility:hidden} .clear{width:100%;display:block;margin:0;padding:0;float:none;clear:both} .fullClose{display:block;position:fixed;top:0;left:0;right:0;bottom:0;z-index:2;-webkit-transition:var(--transition-1);transition:var(--transition-1);background:transparent;opacity:0;visibility:hidden} .free:after, .new:after, .pro:after{display:inline-block;content:'Free!';color:var(--link-color);font-size:85%;font-weight:400;margin:0 5px} .new:after{content:'New!'}
+.pro:after{content:'Pro!'}
+
+/* Main Element */
+html{scroll-behavior:smooth;overflow-x:hidden} body{position:relative;margin:0;padding:0!important;width:100%;font-family:var(--font-body);font-size:14px;color:var(--body-color);background-color:var(--body-bg);-webkit-font-smoothing: antialiased; word-break: break-word;-webkit-user-select: none !important;
+-moz-user-select: -moz-none !important;
+-ms-user-select: none !important;
+user-select: none !important; -webkit-touch-callout:none!important;}
+.mainWrapper{position:relative}
+
+
+/* No Script by wendy code*/
+body,html{overflow:hidden}
+.wcNoScript{text-align: center; position: fixed; top:0; left:0; bottom:0; right:0;background:rgba(0,0,0,.5);z-index:99999;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+@-webkit-keyframes slide-down{0%{opacity:0;-webkit-transform:translateY(-100%)}100%{opacity:1;-webkit-transform:translateY(0)}}@keyframes slide-down{0%{opacity:0;transform:translateY(-100%)}100%{opacity:1;transform:translateY(0)}}
+.wcNoScript .wcIsiNoscript{background-color:#96e076;color:#fff;position:absolute;text-align:center;padding:0 30px 30px 30px;margin:auto;top:30%;left:0;right:0;font-size:1.5rem;font-weight:400;font-family:Noto Sans;line-height:1.5em;max-width:670px;box-shadow:0 20px 10px -10px rgba(0,0,0,0.15);border:15px solid rgba(0,0,0,.07); overflow:hidden;-webkit-animation: slide-down .3s ease-out;animation: slide-down .3s ease-out;}
+.wcNoScript p span{color:#ffe88b;font-size:2rem;line-height:normal;font-weight:normal}
+.wcNoScript .wcIsiNoscript:hover{box-shadow:0 20px 10px -10px rgba(0,0,0,0.2)}
+@media screen and (max-width:348px){.wcNoScript{top:-50px}.wcNoScript p{font-size:1rem}}
+/* Related Posts */
+.relatedPosts{margin:40px 0 0;line-height:1.6em} .relatedPosts ul{display:flex;flex-wrap:wrap; position:relative;width:calc(100% + 20px);left:-10px; list-style:none;margin:0;padding:0} .relatedPosts li{display:block;width:calc(33.333% - 20px); margin:0 10px 30px} .relatedPosts .itemThumbnail a{background-image:none; color:inherit} .relatedPosts .itemThumbnail > *:before{content:'No image';display:block;position:absolute;top:50%;left:50%;max-width:none;max-height:100%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%); font-size:12px; opacity:.7} .relatedPosts .itemThumbnail div{background-position:center;background-size:cover;background-repeat:no-repeat; display:block;position:absolute;top:0;left:0;bottom:0;right:0} .relatedPosts .itemTitle{font-size:.85rem;line-height:1.5em; font-family:var(--font-head);font-weight:700}
+.postTag {margin-top: 15px;height: 20px;overflow: auto;font-size: 11px;line-height: 18px;text-align: center;}.postTag p {margin: 0;}
+
+/* Dark Mode */
+.darkMode, .darkMode .FollowByEmail .title{background-color:var(--dark-bg);color:var(--dark-text)}
+.darkMode a, .darkMode .free:after, .darkMode .new:after, .darkMode .postLabel > a:hover, .darkMode .postMore:hover{color:var(--dark-link)}
+.darkMode svg{fill:var(--dark-text)}
+.darkMode svg.line, .darkMode svg .line{fill:none;stroke:var(--dark-text)}
+.darkMode svg.c-1, .darkMode svg .c-1{fill:var(--dark-text)}
+.darkMode svg.c-2, .darkMode svg .c-2{fill:var(--dark-textAlt); opacity:.4}
+.darkMode h1, .darkMode h2, .darkMode h3, .darkMode h4, .darkMode h5, .darkMode h6, .darkMode header a, .darkMode footer{color:inherit}
+
+.darkMode header, .darkMode .mainMenu, .darkMode .htmlMenu .close, .darkMode #LinkList002{background-color:var(--dark-bg);color:inherit}
+.darkMode .headerIcon .headerProfile, .darkMode #mobile-menu, .darkMode .commentsContent ol > li, .darkMode .commentContent i[rel="image"]:before{background-color:var(--dark-bgSec)}
+
+.darkMode header, .darkMode .headerIcon .headerProfile, .darkMode .headerIcon .headerProfile .socialLink, .darkMode .blogContent .mainbar > *,
+.darkMode .mainMenu, .darkMode .htmlMenu > li.break:after, .darkMode .Label .cloud .labelName, .darkMode .postComments > *, .darkMode .postTimes, .darkMode .postRelated, .darkMode .postRelated h3, .darkMode .postRelated h4, .darkMode .postRelated b, .darkMode .post blockquote, .darkMode .post .commentContent i[rel="quote"], .darkMode .post table th, .darkMode .post table td, .darkMode .post .tocInner, .darkMode .post .spoiler, .darkMode .accordion li, .darkMode .postShare, .darkMode .shareIcon > *, .darkMode .sharePreview, .darkMode .blogComments .commentsTitle, .darkMode .commentsIcon .commentClose, .darkMode .commentsContent ul > li:not(:last-child), .darkMode .commentContent.hasDeleted, .darkMode .commentContent i[rel="image"]:before, .darkMode .commentContent i[rel="quote"], .darkMode .post .tabsHead, .darkMode .post .tabsHead > *, .darkMode .post .proPrice, .darkMode .post .proInfoL, .darkMode .post .proInfoR, .darkMode .post .proInfo.one,.darkMode .FollowByEmail, .darkMode .post .proMarket > a{border-color:rgba(255,255,255,.1)}
+.darkMode .Profile .team .profileLink:hover, .darkMode .htmlMenu a.link:hover, .darkMode .htmlMenu > li li a:hover, .darkMode .postThumbnail div, .darkMode .postThumbnail a, .darkMode .blogPager .noPost, .darkMode .blogPager .current, .darkMode .postNav .current{background-color:rgba(255,255,255,.1)}
+.darkMode #mobile-menu, .darkMode .commentsContent ol > li{border-color:transparent;color:inherit}
+
+.darkMode .postLabel > a, .darkMode .postTitle a, .darkMode .itemTitle a, .darkMode .postInfo a, .darkMode .blogPager a, .darkMode .postNav a, .darkMode .breadcrumbs a, .darkMode .button, .darkMode .shareIcon a, .darkMode .commentActions a, .darkMode .commentReply a, .darkMode .tableOfContent a, .darkMode .post .tocInner a{color:var(--dark-text)}
+.darkMode .commentReplies{background-color:rgba(0,0,0,.1)}
+.darkMode .postComments > a:before{background-color:var(--dark-bgAlt)}
+.darkMode .postComments svg, .darkMode .postComments > *:hover svg.line .fill{fill:var(--dark-text);opacity:.8}
+.darkMode .postComments svg.line{fill:none;stroke:var(--dark-text);opacity:.8}
+.darkMode .blogContent .widget input[type=text], .darkMode .blogContent .widget input[type=email], .darkMode .blogContent .widget textarea{border-color:rgba(255,255,255,.1); background-color:var(--dark-bgAlt)}
+.darkMode .blogContent .widget input[type=text]:focus, .darkMode .blogContent .widget input[type=email]:focus, .darkMode .blogContent .widget textarea:focus{border-color:var(--body-altColor)}
+@media screen and (max-width:896px){
+.darkMode .headerSearch input[type=text]{background-color:var(--dark-bgAlt)}
+.darkMode .mainMenu{background-color:transparent}
+.darkMode .mainMenu .section{background-color:var(--dark-bg)}
+.darkMode .navInput:checked ~ .mainWrapper .htmlMenu a.link:hover{background-color:rgba(255,255,255,.1)}
+}
+
+@media screen and (max-width:1100px){
+.relatedPosts li{width:calc(50% - 20px)}}
+@media screen and (max-width:896px){.relatedPosts li{width:calc(33.333% - 20px)}}
+@media screen and (max-width:640px){.relatedPosts li{width:calc(50% - 20px)}}
+@media screen and (max-width:480px){
+.darkMode .itemFeatured .itemContent{background-color:var(--dark-bgSec)}
+.relatedPosts ul{flex-wrap:nowrap;width:calc(100% + 40px);left:-20px;margin-bottom:50px;padding:0 20px; overflow-y:hidden;overflow-x:scroll;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch} .relatedPosts li{display:block;flex-shrink:0; width:70%; margin:0 15px 0 0; scroll-snap-align:center} .relatedPosts li:last-child{margin-right:0} .relatedPosts ul:after{content:'';display:block;flex-shrink:0; align-self:stretch;padding-left:20px}
+.relatedPosts .itemTitle{font-size:13px}
+}
