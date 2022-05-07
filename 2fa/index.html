@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://maifentools.herokuapp.com/static/image/logo.png" rel='icon' type='image/x-icon'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    	<meta content='MaifenNetwork cộng đồng chia sẻ đam mê phượt, công nghệ, khoa học, kỹ thuật, kinh tế, đầu tư, tiền kỹ thuật số' name='description' />
+    	<meta content='maifen, maifennetwork, phượt, tiền ảo, maifen community, cộng đồng maifen, hello maifen' name='keywords' />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+	<title>TOOLS LẤY MÃ 2FA</title>
+</head>
+<body class="text-center">
+	<div class="container mt-5">
+		<h1 class="text-center">LẤY MÃ 2FA (FB, GG,...)</h1>
+		
+		<p>Nếu cần lấy một lúc nhiều mã thì mỗi mã secret key bạn nhập cho mình một dòng nhé</p>
+		<form class="form" method="post" action="/2fa">
+			<div class="form-group">
+				<textarea rows="8" style="color:white;" type="text" class="form-control bg-dark" name="key" placeholder="NHẬP MÃ SECRET..." required></textarea>
+			</div>
+			<div class="form-group">
+				<center><input type="submit" class="btn btn-success" value="NHẬN NGAY" /></center>
+			</div>
+		</form>
+		
+	</div>
+
+	<style type="text/css">
+		html,body{height:90%}body{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;padding-top:40px;padding-bottom:40px;background-color:#1c1e21;color: white}
+	</style>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+}
+</script>
+
+</body>
+</html>
