@@ -1,0 +1,411 @@
+/*
+@font-face {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/helvthin.otf);
+}
+html * {max-height:1000000px;}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica";
+    background: url(/img/bg.jpg) no-repeat;
+    background-color: #2F4F4F;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+header {
+}
+*/
+.key {
+    border: 1px solid #eee;
+    /*border-radius: 26px;
+    color: #fff;*/
+    display: inline-block;
+    font-size: 14px;
+    height: 52px;
+	line-height:52px;
+    text-align: center;
+    vertical-align: top;
+    width: 40px;
+    margin: 5px 1.5px!important;
+	padding:0;
+}
+.key p {
+	font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+.keybord {
+    height: 543px;
+    margin: 5px auto 0;
+    width: 1264px;
+    position: relative;
+}
+.top-block {
+    background:#2F4F4F;
+    height:180px;
+    width: 1264px;
+    margin:5px auto;
+}
+.passgen-top-block {
+    background:#2F4F4F;
+    height:440px;
+    width: 800px;
+    margin:5px auto;
+}
+.top-p {
+    color:#FFEFD5;
+    padding-left:20px;
+    font-size:20px;
+    margin:5px;
+    text-align:
+    center;
+}
+.padding-l-r-40 {
+    padding-left:40px;
+    padding-right:40px;
+}
+/*
+.blur {
+    background: rgba(0, 0, 0, 0) url("/img/bg.jpg") no-repeat scroll center 51%;
+    filter: blur(20px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.fade {
+    background-color: #2F4F4F;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+*/
+/*
+.content {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+*/
+.keybord-top {
+    background-color: #2F4F4F;
+    color: #B0C4DE;
+    font-size: 16px;
+    
+    margin: 0 0 15px;
+    overflow: hidden;
+    height:30px;
+    width: 100%;
+}
+.keybord-top kbd{display: inline-block;
+    margin-bottom: 5px;}
+.vh {
+    visibility: hidden;
+}
+.dl {
+    font-size: 12px;
+    line-height: 1.3;
+}
+.dl > p {
+    margin-top: 14px;
+}
+.t16 {
+    font-size: 12px;
+}
+
+.key.dl.smin > p {
+    font-size: 28px;
+    margin-top: -2px;
+}
+.key.dl.splus > p {
+    font-size: 20px;
+    line-height: 0.7;
+}
+.brackets {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.half {
+    width: 20px;
+}
+.key-block {
+    padding: 0 22px;
+}
+.key.bs > p {
+    margin-top: -2px;
+}
+.key.bs {
+    font-size: 30px;
+    width: 86px;
+}
+.key.tab {
+    width: 60px;
+}
+.key.ds > p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+.key.ds.sum {
+    width: 81px;
+}
+.key.plus {
+    float: right;
+    height: 114px;
+}
+.key.plus > p {
+    margin-top: 45px;
+}
+.key.caps {
+    font-size: 12px;
+    width: 86px;
+}
+
+.key.k220 {
+    width: 66px;
+}
+.key.enter {
+    width: 83px;
+}
+.key.shift1 {
+    width: 115px;
+}
+.key.shift1 > p, .key.shift2 > p {
+    font-size: 16px;
+}
+.key.shift2 {
+    width: 97px;
+}
+.key.enter2 {
+    float: right;
+    height: 114px;
+}
+.key.enter2 > p {
+    font-size: 14px;
+    margin-top: 48px;
+}
+.key.enter span {
+    background: rgba(0, 0, 0, 0) url("/img/wk.png") repeat scroll -24px 0;
+    display: inline-block;
+    height: 12px;
+    vertical-align: -1px;
+    width: 24px;
+}
+.key.ctrl1, .key.ctrl2 {
+    width: 66px;
+}
+.cblock > span {
+    border-bottom: 1px solid #fff;
+    display: block;
+    margin: 5px 3px 0;
+}
+.cblock {
+    border: 1px solid #fff;
+    height: 25px;
+    margin: 12px auto 0;
+    width: 25px;
+}
+.key.cont {
+    width: 66px;
+}
+.key.arup > p {
+    font-size: 26px;
+}
+.key.wndw > p {
+
+    text-align: center;
+}
+.key.wndw span {
+    background: rgba(0, 0, 0, 0) url("/img/wk.png") no-repeat scroll 0 0;
+    display: block;
+    height: 23px;
+    margin: 0 auto;
+    width: 24px;
+}
+.key.wndw {
+    width: 66px;
+}
+.key.alt {
+    width: 66px;
+}
+.key.space {
+    width: 231px;
+}
+.key.zero {
+    width: 83px;
+}
+.key.lclick {
+    border-radius: 0 0 0 15px;
+    height: 40px;
+    vertical-align: bottom;
+    width: 96px;
+}
+.key.rclick {
+    border-radius: 0 0 15px 0;
+    height: 40px;
+    vertical-align: bottom;
+    width: 96px;
+}
+.key.cclick {
+    border-radius: 0;
+    height: 40px;
+    vertical-align: bottom;
+    width: 24px;
+}
+.m-block {
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    width: 843px;
+}
+.key.arleft > p, .key.arright > p {
+    font-size: 26px;
+}
+.key.ardown > p {
+    font-size: 26px;
+    
+}
+.keybord-footer > div {
+    width:1264px;
+    height:30px;
+    margin:0 auto;
+    padding-top:0px;
+}
+.keybord-footer > hr {
+    color:#D3D3D3;
+}
+.keybord-footer > a.left{
+    float:left;
+    padding-left:50px;
+}
+.keybord-footer > a.right{
+    float:right;
+    padding-right:50px;
+}
+.keybord-footer > a {
+    color:#D3D3D3;
+    font-size:18px;
+    text-decoration:none;
+}
+/*
+footer {
+    background-color: #2F4F4F;
+    margin: 0 auto;
+    padding: 0 0;
+    width:1264px;
+}
+.fcontent {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    width: 1234px;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 5px 0 0 0;
+    text-align:center;
+    color:#D3D3D3;
+}
+h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 5px 0 0 0;
+    text-align:center;
+    color:#D3D3D3;
+}
+*/
+.key.press {
+    background-color: #E9967A;
+    border-color: #E9967A;
+    color: #000;
+}
+.key.active {
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+    color: #000;
+}
+.fdesc {
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+.ftext > span {
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px 0 0 16px;
+}
+.ftext .key {
+    height: 40px;
+    width: 40px;
+}
+.ftext .key > p {
+    margin-top: 11px;
+}
+.key.wndw.active span, .key.wndw.press span {
+    background-position: 0 -23px;
+}
+.key.cont.active .cblock, .key.cont.press .cblock, .key.cont.active .cblock>span, .key.cont.press .cblock>span {
+    border-color: #000;
+}
+.key.enter.active span, .key.enter.press span {
+    background-position: -24px -13px;
+}
+.keybord-top > p {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 3px 0;
+}
+.keyboard {
+    max-width: 1008px;
+}
+.key-caption {
+    height: 52px;
+    line-height: 52px;
+	margin-bottom:5px;
+	text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    font-weight: 500;
+	text-align: center;
+    width: 100%;
+}
+.key-row {
+    line-height: 52px;
+    display: inline-block;
+    margin: 0;
+    margin: 5px 1.5px;
+}
+/*
+.quest-block {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+.quest-block > p {
+    letter-spacing: 1px;
+    margin: 13px auto;
+    text-align: center;
+    width: 1264px;
+}
+.quest-block a {
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0 22px;
+}
+.quest-block a:hover {
+    text-decoration: none;
+}
+*/
